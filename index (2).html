@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <center>
+        <h4><mark><u>RACE REGISTRATION FORM</u><mark></h4>
+        </center>
+    <span>E-mail</span> <input type="email" name="email" id="emailInput" placeholder="E-mail" width="40%">
+    <div class="select--title">
+        <span>Title - </span>
+        <input type="radio" name="radio" id="mrCheckbox"><span>Mr.</span>
+        <input type="radio"name="radio" id="msCheckbox"><span>Ms.</span>
+        <input type="radio" name="radio" id="mrsCheckbox"><span>Mrs.</span>
+    </div>
+    <div class="name">
+        <div class="columnInput">
+            <h3>First Name</h3>
+            <input type="text" name="" id="firstnameInp" required>
+        </div>
+        <div class="columnInput">
+            <h3>Second Name</h3>
+            <input type="text" name="" id="secondname" required>
+        </div>
+    </div>
+    <div id="postal__address">
+        <h3>Complete Poastal Mailing Address (with Postal Code & Country)</h3>
+        <input type="text" name="" id="postalAddress" required>
+    </div>
+    <div id="optionnal">
+        <span>Phone </span><input placeholder="+7 *** ** **" type="text" name="" id="phoneInp" required> <span>Fax</span> <input type="text" name=""
+            id="faxInp" placeholder="+7 *** ** **"><br>
+        <span>Occupation </span><input type="text" name="" id="occupationInp"> <span>Marital Status</span>
+        <select name="Martial" id="martialStatus" required>
+            <option value="Married">Married</option>
+            <option value="NotMarried">Not married</option>
+        </select>
+
+    </div>
+    <span>Emergency - </span><span style="margin-left: 60px;">Name</span><span style="margin-left: 60px;">email</span><span style="margin-left: 90px;">Phone No</span><br>
+    <span>Contact</span><input type="text" name="" id="contactName"><input type="text" name="" id="contactEmail"><input type="text" name="" id="contactPhone">
+    <div id="select_trip">
+        <p>Select Trip -</p>
+        <input type="radio" name="Trip" id="stageRace"><span>Stage Race</span>
+        <input type="radio" name="Trip" id="marathon"><span>Mt. Everest Challenge Marathon (4 day trip)</span>
+        <input type="radio" name="Trip" id="bikeRally"><span>Mt. Everest Bike Rally</span>
+        <br>
+        <span>I am a</span>
+        <input type="checkbox" name="sport" id="runner"><span>Runner</span>
+        <input type="checkbox" name="sport" id="walker"><span>Walker</span>
+        <input type="checkbox" name="sport" id="cyclist"><span>Cyclist</span>
+        <br>
+        <span>T-Shirt Size </span>
+        <input type="radio" name="size" id="small"><span>Small</span>
+        <input type="radio" name="size" id="medium"><span>Medium</span>
+        <input type="radio" name="size" id="large"><span>Large</span>
+        <input type="radio" name="size" id="xLarge"><span>X-large</span>
+        <br>
+        <span>Smoker</span>
+        <input type="radio" name="smoker" id="yes"><span>Yes</span>
+        <input type="radio" name="smoker" id="no"><span>No</span>
+        <br>
+        <span>Room Sharing Preference</span>
+        <input type="text" name="" id="roomSharing">
+    </div>
+    <a href="https://thepointsguy.com/guide/6-very-important-things-to-know-about-your-passport/">Passport Details</a>
+    <div id="required">
+        <span>Exact name as it appears</span>
+        <input type="text" name="" id="exactName">
+        <div id="required__first-row">
+            <div class="columnInput">
+                <p>Number</p>
+                <input type="number" name="" id="numInp">
+            </div>
+            <div class="columnInput">
+                <p>Date Issued</p>
+                <input type="date" name="" id="dateInp">
+                <label for=""
+            </div>
+        
+            <div class="columnInput">
+                <p>Where Issued</p>
+                <input type="text" name="" id="issuedInp">
+            </div>
+            <div class="columnInput">
+                <p>Date Expires</p>
+                <input type="date" name="" id="expiresInp">
+            </div>
+        </div>
+        <div id="required__second-row">
+            <div class="columnInput">
+                <p>Date of Birth</p>
+                <input type="date" name="" id="birthInp">
+            </div>
+            <div class="columnInput">
+                <p>Age</p>
+                <input type="text" name="" id="ageInp">
+            </div>
+            <div class="columnInput">
+                <p>Place of Birth</p>
+                <input type="text" name="" id="placeBirthInp">
+            </div>
+            <div class="columnInput">
+                <p>Citizen of</p>
+                <input type="text" name="" id="citizenInp">
+            </div>
+        </div>
+    </div>
+    <a href="https://www.booking.com/content/terms.en-gb.html">See Booking Conditions
+        for all the trips</a> <br>
+    <span>I agree to all booking terms & conditions</span> <input type="checkbox" name="" id=""><br>
+    <button id="submitBtn" style="background-color: rgb(247, 232, 24); border: none; border-radius: 8px; font-weight: 900; font-size: 32px; color: white;">Submit</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
